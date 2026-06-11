@@ -1,52 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bicicletas</title>
+    <title>Bicicletas | VeloxElite</title>
+    <meta name="description" content="Catalogo de bicicletas premium VeloxElite: ruta, MTB y e-bike.">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <table>
-            <tr>
-                <td style="width: 10vw;">
-                    <img src="./assets/logo.png" alt="Logo" width="150px" style="border-radius: 50%;">
-                </td>
-                <td style="width: 90vw; font-size: 20px;">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegacion principal">
+            <a class="brand" href="./index.html" aria-label="VeloxElite inicio">
+                <img src="./assets/logo.png" alt="Logo VeloxElite">
+                <span>VeloxElite</span>
+            </a>
 
-                    <a href="./index.html" style="list-style: none; color: gold;">Inicio</a>
-                    <a href="./bicicletas.html" style="list-style: none; color: gold;">Bicicletas</a>
-                    <a href="#" style="list-style: none; color: gold;">Alquiler</a>
-                    <a href="#" style="list-style: none; color: gold;">Contacto</a>
-                </td>
-            </tr>
-        </table>
+            <div class="nav-links">
+                <a href="./index.html">Inicio</a>
+                <a class="active" href="./bicicletas.html">Bicicletas</a>
+                <a href="./index.html#alquiler">Alquiler</a>
+                <a href="./index.html#contacto">Contacto</a>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <h1>
-                COMPRAR BICICLETAS 
-            </h1>
-            <P>Descubri Nuestros Nuevos Modelos de Alta Gama</P>
-            <hrborder style="color: gold;">
+        <section class="page-hero compact">
+            <p class="eyebrow">Comprar bicicletas</p>
+            <h1>Modelos de alta gama</h1>
+            <p>Descubri bicicletas de ruta, MTB y e-bike seleccionadas para velocidad, control y comodidad.</p>
         </section>
-        <section>
-            <h1>Ruta</h1>
-            <img src="./assets/bo.webp" alt="bici" width="150px" style="border-radius: 50%;">
-            <img src="./assets/image.png" alt="bici" width="150px" style="border-radius: 50%;">
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">Ruta</p>
+                <h2>Velocidad y eficiencia</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/bo.webp" alt="Bicicleta de ruta carbono">
+                    <div>
+                        <span class="tag">Carbono</span>
+                        <h3>Velox Aero R1</h3>
+                        <p>Cuadro liviano, postura agresiva y respuesta precisa para entrenamientos intensos.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/image.png" alt="Bicicleta de ruta premium">
+                    <div>
+                        <span class="tag">Performance</span>
+                        <h3>Velox Endurance Pro</h3>
+                        <p>Equilibrio entre velocidad y confort para recorridos largos sin perder elegancia.</p>
+                    </div>
+                </article>
+            </div>
         </section>
-        <hr>
-         <section>
-            <h1>MTB</h1>
-            <img src="./assets/bicimt1.png" alt="bici" width="150px" style="border-radius: 50%;">
-            <img src="./assets/bicimt2.png" alt="bici" width="150px" style="border-radius: 50%;">
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">MTB</p>
+                <h2>Control en todo terreno</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/bicimt1.png" alt="Bicicleta MTB premium">
+                    <div>
+                        <span class="tag">Trail</span>
+                        <h3>Summit X9</h3>
+                        <p>Suspension confiable, cubiertas de agarre y geometria estable para senderos tecnicos.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/bicimt2.png" alt="Bicicleta MTB de alta gama">
+                    <div>
+                        <span class="tag">XC</span>
+                        <h3>Peak Carbon XC</h3>
+                        <p>Ligera, reactiva y preparada para subir fuerte y bajar con seguridad.</p>
+                    </div>
+                </article>
+            </div>
         </section>
-        <hr>
-         <section>
-            <h1>E-bike</h1>
-            <img src="./assets/bicie1.png" alt="bici" width="150px" style="border-radius: 50%;">
-            <img src="./assets/bicie2.png" alt="bici" width="150px" style="border-radius: 50%;">
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">E-bike</p>
+                <h2>Potencia inteligente</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/bicie1.png" alt="E-bike urbana premium">
+                    <div>
+                        <span class="tag">Urbana</span>
+                        <h3>Pulse City E</h3>
+                        <p>Asistencia suave, dise&ntilde;o moderno y autonomia ideal para la ciudad.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/bicie2.png" alt="E-bike deportiva premium">
+                    <div>
+                        <span class="tag">Sport</span>
+                        <h3>Volt Sport E2</h3>
+                        <p>Motor potente y componentes robustos para moverte mas lejos con menos esfuerzo.</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>VeloxElite</strong>
+            <p>Catalogo premium para ciclistas que buscan rendimiento.</p>
+        </div>
+        <a href="./accesorios.html">Completar equipamiento</a>
+    </footer>
 </body>
 </html>

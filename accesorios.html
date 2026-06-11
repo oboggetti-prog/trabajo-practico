@@ -1,50 +1,118 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>accesorios</title>
-    <meta name="description" content="VeloxElite es una plataforma innovadora especializada en la venta y alquiler de bicicletas de alta gama y accesorios premium, diseñada para satisfacer las necesidades de ciclistas exigentes y apasionados por el rendimiento. Nuestro sitio web ofrece una experiencia intuitiva y moderna, donde los usuarios pueden explorar una amplia variedad de bicicletas de última generación, incluyendo modelos de ruta, montaña y urbanas, provenientes de las mejores marcas del mercado.
-
-    Además de la compra, VeloxElite se destaca por brindar un servicio de alquiler flexible, ideal tanto para turistas como para deportistas que buscan una solución temporal sin comprometer calidad. Cada producto cuenta con descripciones detalladas, especificaciones técnicas y recomendaciones personalizadas para facilitar la decisión de compra o alquiler.
-
-    El sitio también integra una sección exclusiva de accesorios, donde se pueden encontrar cascos, indumentaria, repuestos y tecnología aplicada al ciclismo, garantizando seguridad y máximo rendimiento. Gracias a su enfoque en la optimización SEO, VeloxElite asegura una navegación rápida, contenido relevante y visibilidad en motores de búsqueda, posicionándose como una referencia en el mundo del ciclismo de alto nivel. Nuestro compromiso es ofrecer calidad, innovación y una experiencia única para cada usuario.">
-    <meta name="keywords" content="bicicletas de alta gama, alquiler de bicicletas, compra de bicicletas, accesorios de ciclismo, bicicletas premium, ciclismo de alto rendimiento, bicicletas de montaña, bicicletas de ruta, tienda de bicicletas online, alquiler de bicicletas premium, equipamiento ciclista, bicicletas urbanas, VeloxElite, tecnología para ciclismo">
-    <meta name="author" content="Camila Acosta, Lorenzo Leiva, Octavio Boggetti">
+    <title>Accesorios | VeloxElite</title>
+    <meta name="description" content="Accesorios premium VeloxElite: zapatillas, cascos y ruedas para ciclismo de alto rendimiento.">
+    <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <header>
-        <table>
-            <tr>
-                <td style="width: 10vw;">
-                    <img src="./assets/logo.png" alt="Logo" width="150px" style="border-radius: 50%;">
-                </td>
-                <td style="width: 90vw; font-size: 20px;">
+    <header class="site-header">
+        <nav class="navbar" aria-label="Navegacion principal">
+            <a class="brand" href="./index.html" aria-label="VeloxElite inicio">
+                <img src="./assets/logo.png" alt="Logo VeloxElite">
+                <span>VeloxElite</span>
+            </a>
 
-                    <a href="./index.html" style="list-style: none; color: gold;">Inicio</a>
-                    <a href="./bicicletas.html" style="list-style: none; color: gold;">Bicicletas</a>
-                    <a href="#" style="list-style: none; color: gold;">Alquiler</a>
-                    <a href="#" style="list-style: none; color: gold;">Contacto</a>
-                </td>
-            </tr>
-        </table>
+            <div class="nav-links">
+                <a href="./index.html">Inicio</a>
+                <a href="./bicicletas.html">Bicicletas</a>
+                <a href="./index.html#alquiler">Alquiler</a>
+                <a href="./index.html#contacto">Contacto</a>
+            </div>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <hr>
-            <h1>Zapatillas</h1>
-            <img src="./assets/zapa1.png" alt="zapa" width="150px" style="border-radius: 50%;">
-            <img src="./assets/zap2.png" alt="zapa" width="150px" style="border-radius: 50%;">
-            <hr>
-            <h1>Cascos</h1>
-            <img src="./assets/casco1.png" alt="cascos" width="150px" style="border-radius: 50%;">
-            <img src="./assets/casco2.png" alt="cascos" width="150px" style="border-radius: 50%;">
-            <hr>
-            <h1>Ruedas</h1>
-            <img src="./assets/rueda1.png" alt="zapa" width="150px" style="border-radius: 50%;">
-            <img src="./assets/rueda2.png" alt="zapa" width="150px" style="border-radius: 50%;">
-            <hr>
+        <section class="page-hero compact">
+            <p class="eyebrow">Accesorios</p>
+            <h1>Equipamiento para rendir mejor</h1>
+            <p>Completa tu experiencia con zapatillas, cascos y ruedas de estilo premium.</p>
+        </section>
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">Zapatillas</p>
+                <h2>Conexion y potencia</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/zapa1.png" alt="Zapatillas de ciclismo premium">
+                    <div>
+                        <span class="tag">Ruta</span>
+                        <h3>Elite Road Fit</h3>
+                        <p>Suela rigida, ajuste preciso y transferencia eficiente de energia.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/zap2.png" alt="Zapatillas de ciclismo negras">
+                    <div>
+                        <span class="tag">Pro</span>
+                        <h3>Carbon Lock Pro</h3>
+                        <p>Dise&ntilde;o liviano con cierre firme para entrenar o competir.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">Cascos</p>
+                <h2>Proteccion con estilo</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/casco1.png" alt="Casco de ciclismo premium">
+                    <div>
+                        <span class="tag">Aero</span>
+                        <h3>Shield Aero</h3>
+                        <p>Ventilacion, seguridad y estetica limpia para rutas exigentes.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/casco2.png" alt="Casco de ciclismo deportivo">
+                    <div>
+                        <span class="tag">Trail</span>
+                        <h3>Trail Guard</h3>
+                        <p>Cobertura superior y ajuste comodo para salidas largas.</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="catalog-section">
+            <div class="section-heading">
+                <p class="eyebrow">Ruedas</p>
+                <h2>Rodado de alto rendimiento</h2>
+            </div>
+            <div class="product-grid">
+                <article class="product-card">
+                    <img src="./assets/rueda1.png" alt="Rueda de bicicleta premium">
+                    <div>
+                        <span class="tag">Carbono</span>
+                        <h3>Carbon Speed 45</h3>
+                        <p>Perfil aerodinamico y excelente rigidez para ganar velocidad.</p>
+                    </div>
+                </article>
+                <article class="product-card">
+                    <img src="./assets/rueda2.png" alt="Rueda deportiva de bicicleta">
+                    <div>
+                        <span class="tag">All road</span>
+                        <h3>Endurance Grip</h3>
+                        <p>Rodado estable para entrenamientos, ciudad y rutas mixtas.</p>
+                    </div>
+                </article>
+            </div>
         </section>
     </main>
+
+    <footer class="site-footer">
+        <div>
+            <strong>VeloxElite</strong>
+            <p>Accesorios premium para completar cada salida.</p>
+        </div>
+        <a href="./bicicletas.html">Ver bicicletas</a>
+    </footer>
 </body>
 </html>
